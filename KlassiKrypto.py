@@ -90,7 +90,7 @@ class Chaocipher:
     def __init__(self, left=[], right=[]):
         if len(left) == 0 and len(right) == 0:
             self.alpha_sub = ['H', 'X', 'U', 'C', 'Z', 'V', 'A', 'M', 'D', 'S', 'L', 'K', 'P', 'E', 'F', 'J', 'R', 'I', 'G', 'T', 'W', 'O', 'B', 'N', 'Y', 'Q']
-	    self.alpha_master = ['P', 'T', 'L', 'N', 'B', 'Q', 'D', 'E', 'O', 'Y', 'S', 'F', 'A', 'V', 'Z', 'K', 'G', 'J', 'R', 'I', 'H', 'W', 'X', 'U', 'M', 'C']
+            self.alpha_master = ['P', 'T', 'L', 'N', 'B', 'Q', 'D', 'E', 'O', 'Y', 'S', 'F', 'A', 'V', 'Z', 'K', 'G', 'J', 'R', 'I', 'H', 'W', 'X', 'U', 'M', 'C']
         else:
             self.alpha_sub = left
             self.alpha_master = right
@@ -196,7 +196,7 @@ class Beale:
         try:
             book_fd = open(book, "r")
         except IOError as ier:
-            print "Error: Unable to open book file"
+            print("Error: Unable to open book file")
             exit(1)
         text = book_fd.read()
         book_fd.close()
